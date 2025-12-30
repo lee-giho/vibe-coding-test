@@ -10,3 +10,6 @@
 <img width="459" height="658" alt="스크린샷 2025-12-30 오후 2 49 02" src="https://github.com/user-attachments/assets/ebcc0287-e563-4a17-9877-307ee7724094" />
 <img width="461" height="754" alt="스크린샷 2025-12-30 오후 2 49 06" src="https://github.com/user-attachments/assets/8ffece13-4b95-4537-8c00-19cb8d4606d5" />
 <img width="469" height="714" alt="스크린샷 2025-12-30 오후 2 49 12" src="https://github.com/user-attachments/assets/ba1b78bc-9816-4be4-b3a1-87e3f08d597d" />
+<img width="467" height="700" alt="스크린샷 2025-12-30 오후 3 02 28" src="https://github.com/user-attachments/assets/72385ec0-37a8-4fb5-bb42-1ae2f32d9a00" />
+<img width="469" height="763" alt="스크린샷 2025-12-30 오후 3 02 34" src="https://github.com/user-attachments/assets/0c811856-6b5f-40b1-ae39-bd97773f2b6d" />
+<img width="461" height="252" alt="스크린샷 2025-12-30 오후 3 02 38" src="https://github.com/user-attachments/assets/8fc60af4-eccf-4b97-ad70-d2b35979f6cf" />
