@@ -158,6 +158,76 @@ http://localhost:5001
 
 ---
 
+## 🌐 외부 접속 설정 (ngrok)
+
+로컬에서 실행 중인 투표 웹페이지를 **다른 컴퓨터나 모바일 기기**에서 접속할 수 있도록 ngrok을 사용할 수 있습니다.
+
+### ngrok 설치 및 실행
+
+#### 1️⃣ ngrok 설치
+```bash
+# macOS (Homebrew)
+brew install ngrok
+
+# Windows (Chocolatey)
+choco install ngrok
+
+# Linux (Snap)
+sudo snap install ngrok
+```
+
+#### 2️⃣ 투표 서비스 실행
+먼저 로컬에서 투표 시스템이 실행 중인지 확인하세요:
+```bash
+docker-compose up -d
+```
+
+#### 3️⃣ ngrok 터널 생성
+새 터미널을 열고 다음 명령어를 실행하세요:
+```bash
+ngrok http 5001
+```
+
+#### 4️⃣ 외부 URL 확인
+ngrok 실행 후 다음과 같은 출력이 표시됩니다:
+```
+ngrok                                                                    
+                                                                         
+Session Status                online                                     
+Session Expires               7 hours, 59 minutes                       
+Update                         update available (version 3.34.1, Ctrl-C then: ngrok update)
+Version                        3.18.4                                   
+Region                         United States (us)                       
+Web Interface                  http://127.0.0.1:4040                   
+Forwarding                     https://abcd1234.ngrok-free.app -> http://localhost:5001
+
+Connections                    ttl     opn     rt1     rt5     p50     p90 
+                              0       0       0.00    0.00    0.00    0.00
+```
+
+**외부 접속 URL**: `https://abcd1234.ngrok-free.app` (실제 URL은 다를 수 있습니다)
+
+#### 5️⃣ 다른 기기에서 접속
+- 스마트폰, 태블릿, 다른 PC에서 위의 URL로 접속
+- 동일한 투표 페이지에서 실시간으로 투표 가능
+- 모든 투표 결과가 실시간으로 동기화됨
+
+### ngrok 웹 인터페이스
+터널 상태와 접속 로그를 확인하려면:
+```
+http://127.0.0.1:4040
+```
+
+### 주의사항
+- **무료 계정**: 터널은 8시간 후 만료됩니다
+- **보안**: 공개 URL이므로 테스트 목적으로만 사용하세요
+- **성능**: 인터넷을 경유하므로 로컬 접속보다 느릴 수 있습니다
+
+### ngrok 종료
+터널을 종료하려면 ngrok이 실행 중인 터미널에서 `Ctrl+C`를 누르세요.
+
+---
+
 ## 🖥️ 사용 방법
 
 ### 웹 페이지 사용
